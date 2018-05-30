@@ -1,5 +1,8 @@
 <div class="jumbotron text-center">
 	<h1 class="display-3">{{title}}</h1>
-	<p class="lead">Jot down ideas</p>	
-	<a href="/ideas/add" class="btn btn-dark btn-lg">Add video idea</a>
+	<p class="lead">Jot down ideas</p>
+	
+	{{#if user}}	
+		<a href="/ideas/add" class="btn btn-dark btn-lg">Add video idea</a>
+	{{/if}}
 </div>
